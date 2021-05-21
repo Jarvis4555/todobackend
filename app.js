@@ -9,8 +9,8 @@ const bodyParser = require('body-parser');
 const { List, Task, User } = require('./db/models');
 
 const jwt = require('jsonwebtoken');
-const env= require('dotenv')
-
+const env= require('dotenv');
+const PORT = process.env.PORT||'3000';
 /* MIDDLEWARE  */
 
 // Load middleware
